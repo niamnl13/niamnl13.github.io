@@ -613,6 +613,29 @@ section {
         grid-template-columns: 1fr;
     }
 }
+/* Scroll Reveal Base */
+section, .project-card, .timeline-item, .skill-item, .contact-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar scrolled */
+.navbar.scrolled {
+    background: rgba(15, 23, 42, 0.8);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Active menu indicator */
+.nav-menu a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
 
 /* Smooth Scroll */
 html {
