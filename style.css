@@ -6,21 +6,21 @@
 }
 
 :root {
-    --primary: #2c3e50;
-    --secondary: #34495e;
-    --accent: #e74c3c;
-    --text-dark: #2c3e50;
-    --text-light: #7f8c8d;
-    --bg-white: #ffffff;
-    --bg-light: #f8f9fa;
-    --bg-cream: #fdfbf7;
-    --border: #e8e8e8;
+    --primary: #e8e6e3;
+    --secondary: #b4b4b4;
+    --accent: #d4a574;
+    --accent-hover: #c49564;
+    --bg-dark: #1a1a1a;
+    --bg-darker: #111111;
+    --bg-card: #212121;
+    --border: #2a2a2a;
+    --border-light: #333333;
 }
 
 body {
     font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background-color: var(--bg-black);
-    color: var(--text-dark);
+    background-color: var(--bg-dark);
+    color: var(--primary);
     line-height: 1.7;
     overflow-x: hidden;
 }
@@ -31,13 +31,13 @@ body {
     padding: 0 24px;
 }
 
-/* Navbar - Minimalist & Clean */
+/* Navbar - Elegant Dark */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(8px);
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(12px);
     z-index: 1000;
     border-bottom: 1px solid var(--border);
 }
@@ -46,13 +46,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 24px;
+    padding: 22px 24px;
 }
 
 .nav-brand {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--accent);
     letter-spacing: -0.5px;
 }
 
@@ -63,9 +63,9 @@ body {
 }
 
 .nav-menu a {
-    color: var(--text-light);
+    color: var(--secondary);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s;
     font-size: 0.95rem;
     font-weight: 500;
     position: relative;
@@ -77,13 +77,13 @@ body {
     bottom: -5px;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 1px;
     background: var(--accent);
     transition: width 0.3s;
 }
 
 .nav-menu a:hover {
-    color: var(--text-dark);
+    color: var(--accent);
 }
 
 .nav-menu a:hover::after {
@@ -100,12 +100,12 @@ body {
 .hamburger span {
     width: 24px;
     height: 2px;
-    background: var(--text-dark);
+    background: var(--primary);
     border-radius: 2px;
     transition: 0.3s;
 }
 
-/* Hero Section - Asymmetric Layout */
+/* Hero Section - Sophisticated */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -114,32 +114,47 @@ body {
     position: relative;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
 .hero-content {
-    max-width: 680px;
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    color: var(--text-dark);
-    letter-spacing: -2px;
+    color: var(--primary);
+    letter-spacing: -2.5px;
 }
 
 .hero h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    color: var(--text-light);
+    color: var(--secondary);
     margin-bottom: 1.5rem;
     letter-spacing: -0.5px;
 }
 
 .hero p {
     font-size: 1.1rem;
-    color: var(--text-light);
+    color: var(--secondary);
     margin-bottom: 2.5rem;
-    line-height: 1.8;
+    line-height: 1.9;
+    max-width: 600px;
 }
 
 .highlight {
@@ -155,37 +170,39 @@ body {
 }
 
 .btn {
-    padding: 14px 32px;
-    border-radius: 4px;
+    padding: 15px 34px;
+    border-radius: 2px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s;
     display: inline-block;
     font-size: 0.95rem;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary {
     background: var(--accent);
-    color: white;
-    border: 2px solid var(--accent);
+    color: var(--bg-darker);
+    border: 1px solid var(--accent);
 }
 
 .btn-primary:hover {
-    background: #c0392b;
-    border-color: #c0392b;
-    transform: translateY(-1px);
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--text-dark);
-    border: 2px solid var(--text-dark);
+    color: var(--primary);
+    border: 1px solid var(--border-light);
 }
 
 .btn-secondary:hover {
-    background: var(--text-dark);
-    color: white;
+    background: var(--bg-card);
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
 .social-links {
@@ -194,9 +211,9 @@ body {
 }
 
 .social-links a {
-    color: var(--text-light);
+    color: var(--secondary);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s;
     font-size: 0.95rem;
     position: relative;
 }
@@ -205,7 +222,7 @@ body {
     content: '→';
     margin-right: 6px;
     opacity: 0;
-    transition: opacity 0.3s, margin-right 0.3s;
+    transition: all 0.3s;
 }
 
 .social-links a:hover::before {
@@ -227,17 +244,17 @@ section {
     font-weight: 700;
     margin-bottom: 4rem;
     letter-spacing: -1.5px;
-    color: var(--text-dark);
+    color: var(--primary);
 }
 
 /* About Section */
 .about {
-    background: var(--bg-white);
+    background: var(--bg-darker);
 }
 
 .about-text p {
     font-size: 1.15rem;
-    color: var(--text-light);
+    color: var(--secondary);
     margin-bottom: 1.8rem;
     line-height: 1.9;
     max-width: 800px;
@@ -252,24 +269,24 @@ section {
 }
 
 .stat-item {
-    border-left: 3px solid var(--accent);
+    border-left: 2px solid var(--accent);
     padding-left: 1.5rem;
 }
 
 .stat-item h3 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--accent);
     margin-bottom: 0.5rem;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
 }
 
 .stat-item p {
-    color: var(--text-light);
+    color: var(--secondary);
     font-size: 0.95rem;
 }
 
-/* Timeline - Side by Side */
+/* Timeline - Sophisticated Layout */
 .timeline {
     max-width: 900px;
     margin: 0 auto;
@@ -284,7 +301,7 @@ section {
 }
 
 .timeline-date {
-    color: var(--text-light);
+    color: var(--accent);
     font-weight: 600;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
@@ -298,13 +315,13 @@ section {
 
 .timeline-content h3 {
     font-size: 1.3rem;
-    color: var(--text-dark);
+    color: var(--primary);
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
 .timeline-content h4 {
-    color: var(--text-light);
+    color: var(--secondary);
     font-weight: 400;
     margin-bottom: 1.5rem;
     font-size: 1rem;
@@ -319,7 +336,7 @@ section {
     padding: 0.6rem 0;
     padding-left: 1.5rem;
     position: relative;
-    color: var(--text-light);
+    color: var(--secondary);
     font-size: 0.95rem;
 }
 
@@ -330,9 +347,9 @@ section {
     color: var(--accent);
 }
 
-/* Projects Section - Card Grid */
+/* Projects Section - Premium Cards */
 .projects {
-    background: var(--bg-light);
+    background: var(--bg-darker);
 }
 
 .project-grid {
@@ -343,11 +360,12 @@ section {
 }
 
 .project-card {
-    background: var(--bg-white);
+    background: var(--bg-card);
     padding: 2.5rem;
     border: 1px solid var(--border);
-    transition: all 0.3s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    overflow: hidden;
 }
 
 .project-card::before {
@@ -356,18 +374,34 @@ section {
     top: 0;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     background: var(--accent);
-    transition: width 0.3s;
+    transition: width 0.4s;
+}
+
+.project-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 165, 116, 0.05), transparent);
+    transition: right 0.6s;
 }
 
 .project-card:hover::before {
     width: 100%;
 }
 
+.project-card:hover::after {
+    right: 100%;
+}
+
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px);
+    border-color: var(--border-light);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .project-icon {
@@ -377,15 +411,16 @@ section {
 
 .project-card h3 {
     font-size: 1.4rem;
-    color: var(--text-dark);
+    color: var(--primary);
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .project-card p {
-    color: var(--text-light);
+    color: var(--secondary);
     margin-bottom: 1.5rem;
     line-height: 1.7;
+    font-size: 0.98rem;
 }
 
 .project-tags {
@@ -395,15 +430,21 @@ section {
 }
 
 .project-tags span {
-    background: var(--bg-light);
-    color: var(--text-light);
+    background: var(--bg-darker);
+    color: var(--secondary);
     padding: 0.4rem 1rem;
     font-size: 0.85rem;
     font-weight: 500;
     border: 1px solid var(--border);
+    transition: all 0.3s;
 }
 
-/* Achievements */
+.project-tags span:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Achievements - Elegant List */
 .achievements {
     margin-top: 5rem;
 }
@@ -412,6 +453,7 @@ section {
     font-size: 2rem;
     margin-bottom: 2.5rem;
     font-weight: 600;
+    color: var(--primary);
 }
 
 .achievement-list {
@@ -423,16 +465,22 @@ section {
 }
 
 .achievement-item {
-    background: var(--bg-white);
+    background: var(--bg-card);
     padding: 1.2rem 1.5rem;
-    border-left: 3px solid var(--accent);
-    color: var(--text-light);
+    border-left: 2px solid var(--accent);
+    color: var(--secondary);
     font-size: 0.95rem;
+    transition: all 0.3s;
 }
 
-/* Skills Section */
+.achievement-item:hover {
+    background: var(--bg-dark);
+    transform: translateX(4px);
+}
+
+/* Skills Section - Premium Style */
 .skills {
-    background: var(--bg-white);
+    background: var(--bg-dark);
 }
 
 .skills-container {
@@ -447,7 +495,7 @@ section {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--primary);
 }
 
 .skill-list {
@@ -457,9 +505,9 @@ section {
 }
 
 .skill-item {
-    background: var(--bg-light);
+    background: var(--bg-card);
     padding: 0.7rem 1.3rem;
-    color: var(--text-light);
+    color: var(--secondary);
     font-size: 0.9rem;
     font-weight: 500;
     border: 1px solid var(--border);
@@ -467,18 +515,19 @@ section {
 }
 
 .skill-item:hover {
-    background: var(--text-dark);
-    color: white;
-    border-color: var(--text-dark);
+    background: var(--accent);
+    color: var(--bg-darker);
+    border-color: var(--accent);
+    transform: translateY(-2px);
 }
 
 /* Contact Section */
 .contact {
-    background: var(--bg-light);
+    background: var(--bg-darker);
 }
 
 .contact-subtitle {
-    color: var(--text-light);
+    color: var(--secondary);
     font-size: 1.2rem;
     margin-bottom: 4rem;
     text-align: center;
@@ -493,15 +542,16 @@ section {
 }
 
 .contact-item {
-    background: var(--bg-white);
-    padding: 2rem;
+    background: var(--bg-card);
+    padding: 2.5rem;
     border: 1px solid var(--border);
     transition: all 0.3s;
 }
 
 .contact-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
 .contact-icon {
@@ -510,7 +560,7 @@ section {
 }
 
 .contact-item h3 {
-    color: var(--text-dark);
+    color: var(--primary);
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
     font-weight: 600;
@@ -524,24 +574,24 @@ section {
 }
 
 .contact-item a:hover {
-    color: var(--text-dark);
+    color: var(--accent-hover);
 }
 
 .contact-item p {
-    color: var(--text-light);
+    color: var(--secondary);
     font-size: 0.95rem;
 }
 
 /* Footer */
 .footer {
-    background: var(--bg-white);
+    background: var(--bg-dark);
     text-align: center;
     padding: 2.5rem 0;
     border-top: 1px solid var(--border);
 }
 
 .footer p {
-    color: var(--text-light);
+    color: var(--secondary);
     margin: 0.3rem 0;
     font-size: 0.9rem;
 }
@@ -555,9 +605,9 @@ section {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 65px;
+        top: 69px;
         flex-direction: column;
-        background: white;
+        background: var(--bg-dark);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -570,13 +620,19 @@ section {
         left: 0;
     }
 
+    .hero::before {
+        width: 400px;
+        height: 400px;
+        right: -20%;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
-        letter-spacing: -1px;
+        font-size: 2.8rem;
+        letter-spacing: -1.5px;
     }
 
     .hero h2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .hero p {
@@ -623,7 +679,7 @@ section {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -635,5 +691,23 @@ html {
 /* Selection Color */
 ::selection {
     background: var(--accent);
-    color: white;
+    color: var(--bg-darker);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-darker);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-light);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
 }
