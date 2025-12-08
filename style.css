@@ -19,7 +19,7 @@
 
 body {
     font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background-color: var(--bg-cream);
+    background-color: var(--bg-black);
     color: var(--text-dark);
     line-height: 1.7;
     overflow-x: hidden;
