@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio Antonia Tiopani Manalu - IT Student specializing in Data Analysis, QA, UI/UX Design, and Frontend Development">
-    <title>Antonia Tiopani Manalu Portfolio</title>
+    <title>Antonia Tiopani Manalu | IT Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">Antonia Tiopani Manalu</div>
+            <div class="nav-brand">Antonia</div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,224 +28,340 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Antonia Tiopani Manalu</span></h1>
-                <h2>Information Technology Student</h2>
-                <p>Specializing in Data Analysis, Quality Assurance, UI/UX Design & Frontend Development</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSMTRwrxnMkFqFhvXTsgvJLllxQcSLSMxDrSLjbFPPWzjSpBXxgbjgzzBvFZHssmVwPhLRpg" target="_blank">Email</a>
-                    <a href="https://www.linkedin.com/in/antonia-tiopani-manalu-1297ab299" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/niamnl13" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Side Navigation (Desktop Only) -->
+    <div class="side-nav">
+        <ul>
+            <li data-section="home" class="active">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+            </li>
+            <li data-section="about">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+            </li>
+            <li data-section="experience">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                </svg>
+            </li>
+            <li data-section="projects">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/>
+                </svg>
+            </li>
+            <li data-section="contact">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </li>
+        </ul>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a final-year Information Technology student at <strong>Institut Teknologi Del</strong> with hands-on experience in data analysis, software testing, UI/UX design, and front-end development.</p>
-                    <p>Skilled in SQL, web technologies, system documentation, and structured testing workflows. Recognized for analytical thinking, attention to detail, and strong collaboration.</p>
-                    <p>Currently seeking internship opportunities in <strong>Data Analyst, Quality Assurance, UI/UX Design, or Front-End Development</strong>.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>3.52</h3>
-                            <p>Highest Semester GPA</p>
+    <!-- Main Content -->
+    <main id="fullpage">
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h3 class="subtitle">INFORMATION TECHNOLOGY STUDENT</h3>
+                        <h1 class="hero-title">Hi, I'm <span class="highlight">Antonia Tiopani Manalu</span></h1>
+                        <p class="hero-description">Final-year IT student specializing in Data Analysis, Quality Assurance, UI/UX Design & Frontend Development. Passionate about turning data into insights and building user-friendly applications.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="/docs/cv.pdf" class="btn btn-secondary" download>Download CV</a>
                         </div>
-                        <div class="stat-item">
-                            <h3>10+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>2026</h3>
-                            <p>Expected Graduation</p>
+                        <div class="social-links">
+                            <a href="mailto:niamanalu65@gmail.com" target="_blank">Email</a>
+                            <a href="https://www.linkedin.com/in/antonia-tiopani-manalu-1297ab299" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Jan 2025 - Jun 2025</div>
-                    <div class="timeline-content">
-                        <h3>Software Tester</h3>
-                        <h4>Kawalptnku Information System - Final Project 2</h4>
-                        <ul>
-                            <li>Developed test scenarios and test cases to ensure comprehensive test coverage</li>
-                            <li>Performed functional, UI, and integration testing</li>
-                            <li>Documented, reported, and verified bugs systematically</li>
-                            <li>Collaborated with 4 developers to verify fixes and ensure product stability</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Nov 2024 - Dec 2024</div>
-                    <div class="timeline-content">
-                        <h3>Database Systems - Final Project 1</h3>
-                        <h4>HKBP Hutanamora Church Information Website</h4>
-                        <ul>
-                            <li>Designed ERD, relational models, and normalized schemas</li>
-                            <li>Implemented CRUD operations and wrote optimized SQL queries</li>
-                            <li>Performed data validation and ensured database consistency</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Oct 2023 - Nov 2023</div>
-                    <div class="timeline-content">
-                        <h3>Frontend Developer</h3>
-                        <h4>Academic Project</h4>
-                        <ul>
-                            <li>Developed responsive web applications using HTML, CSS, and JavaScript</li>
-                            <li>Designed UI layouts and implemented modular page structures</li>
-                            <li>Applied basic frameworks and ensured clean, maintainable code</li>
-                        </ul>
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <div class="image-placeholder">
+                                <!-- Ganti dengan foto kamu -->
+                                <span>YOUR PHOTO</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects & Achievements</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-icon">🎯</div>
-                    <h3>Kawalptnku Information System</h3>
-                    <p>Developed an information system that enables users to purchase tryout packages and receive predictions of potential university admission outcomes.</p>
-                    <div class="project-tags">
-                        <span>Testing</span>
-                        <span>QA</span>
-                        <span>Documentation</span>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-split">
+                    <div class="section-image">
+                        <div class="image-container">
+                            <div class="image-placeholder">
+                                <span>YOUR PHOTO 2</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">⛪</div>
-                    <h3>HKBP Silaen Website</h3>
-                    <p>Created system design including ERD, Use Case diagrams, CDM, PDM, and supporting documentation for website development.</p>
-                    <div class="project-tags">
-                        <span>Database</span>
-                        <span>SQL</span>
-                        <span>Design</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">🔍</div>
-                    <h3>National Issues Analysis</h3>
-                    <p>System analysis project focusing on identifying root causes of national-level issues using data-driven approaches.</p>
-                    <div class="project-tags">
-                        <span>Analysis</span>
-                        <span>Research</span>
-                        <span>Problem Solving</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="achievements">
-                <h3>Certifications & Achievements</h3>
-                <div class="achievement-list">
-                    <div class="achievement-item">✓ Meta Data Analyst</div>
-                    <div class="achievement-item">✓ Microsoft Azure AI Fundamentals (AI-900T00-A)</div>
-                    <div class="achievement-item">✓ Responsible AI with GitHub Copilot</div>
-                    <div class="achievement-item">✓ Azure AI Basic Fundamental</div>
-                    <div class="achievement-item">✓ Learn SQL with AI at DQLab</div>
-                    <div class="achievement-item">✓ National Webinar: AI Strategies for Research & Development</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Hard Skills</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">SQL</div>
-                        <div class="skill-item">Data Analysis</div>
-                        <div class="skill-item">Software Testing</div>
-                        <div class="skill-item">HTML/CSS/JavaScript</div>
-                        <div class="skill-item">Laravel</div>
-                        <div class="skill-item">UI/UX (Figma)</div>
-                        <div class="skill-item">Git/GitHub</div>
-                        <div class="skill-item">IoT Basics</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">Analytical Thinking</div>
-                        <div class="skill-item">Attention to Detail</div>
-                        <div class="skill-item">Problem-Solving</div>
-                        <div class="skill-item">Communication</div>
-                        <div class="skill-item">Adaptability</div>
-                        <div class="skill-item">Teamwork</div>
-                        <div class="skill-item">Initiative</div>
+                    <div class="section-content">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="title-decoration">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>A brief introduction about me and my interests in technology.</p>
+                        <div class="about-text">
+                            <p>I am a final-year Information Technology student at <strong>Institut Teknologi Del</strong> with hands-on experience in data analysis, software testing, UI/UX design, and front-end development.</p>
+                            <p>Skilled in SQL, web technologies, system documentation, and structured testing workflows. Recognized for analytical thinking, attention to detail, and strong collaboration.</p>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h3>3.52</h3>
+                                <p>Highest Semester GPA</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>10+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>2026</h3>
+                                <p>Expected Graduation</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">I'm currently seeking internship opportunities. Let's connect!</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <a href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcRwQnZxlSvSBXNhWnqSCQspFtZckZMfPWgxPSJXlCnPgWPlbbDbXrKfrzfKQTjngSNSFrqjx">niamanalu65@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <a href="tel:+6289561139004">0895611399004</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/antonia-tiopani-manalu-1297ab299" target="_blank">Connect with me</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <h3>Location</h3>
-                    <a href="https://maps.app.goo.gl/SdULQWAomUv4NoCo6">Tano Ponggol, Sumatera Utara</a>
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-split">
+                    <div class="section-image">
+                        <div class="image-container">
+                            <div class="image-placeholder">
+                                <span>WORKSPACE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="title-decoration">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>My journey through various projects and roles.</p>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Jan 2025 - Jun 2025</div>
+                                <div class="timeline-content">
+                                    <h3>Software Tester</h3>
+                                    <h4>Kawalptnku Information System</h4>
+                                    <ul>
+                                        <li>Developed test scenarios and test cases for comprehensive coverage</li>
+                                        <li>Performed functional, UI, and integration testing</li>
+                                        <li>Collaborated with 4 developers to ensure product stability</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Nov 2024 - Dec 2024</div>
+                                <div class="timeline-content">
+                                    <h3>Database Developer</h3>
+                                    <h4>HKBP Hutanamora Church Website</h4>
+                                    <ul>
+                                        <li>Designed ERD and normalized database schemas</li>
+                                        <li>Implemented CRUD operations with optimized SQL queries</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Oct 2023 - Nov 2023</div>
+                                <div class="timeline-content">
+                                    <h3>Frontend Developer</h3>
+                                    <h4>Academic Project</h4>
+                                    <ul>
+                                        <li>Developed responsive web applications using HTML, CSS, JavaScript</li>
+                                        <li>Designed UI layouts with modular architecture</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title-center">My Projects</h2>
+                <div class="title-decoration-center">
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="section-subtitle">This is some of my projects that I have done and currently working on.</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">🎯</div>
+                        <h3>Kawalptnku Information System</h3>
+                        <p>An information system enabling users to purchase tryout packages and receive university admission predictions based on performance.</p>
+                        <div class="project-tags">
+                            <span>Testing</span>
+                            <span>QA</span>
+                            <span>Documentation</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">⛪</div>
+                        <h3>HKBP Silaen Website</h3>
+                        <p>Created comprehensive system design including ERD, Use Case diagrams, CDM, PDM for church website development.</p>
+                        <div class="project-tags">
+                            <span>Database</span>
+                            <span>SQL</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">📊</div>
+                        <h3>Population Monitoring System</h3>
+                        <p>Developed a monitoring system tracking population movement using IoT and sensor-based data collection.</p>
+                        <div class="project-tags">
+                            <span>IoT</span>
+                            <span>Data Analysis</span>
+                            <span>Monitoring</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">🔍</div>
+                        <h3>National Issues Analysis</h3>
+                        <p>System analysis project identifying root causes of national-level issues using data-driven approaches.</p>
+                        <div class="project-tags">
+                            <span>Analysis</span>
+                            <span>Research</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <h3>Certifications & Achievements</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">✓ Meta Data Analyst</div>
+                        <div class="achievement-item">✓ Microsoft Azure AI Fundamentals</div>
+                        <div class="achievement-item">✓ Responsible AI with GitHub Copilot</div>
+                        <div class="achievement-item">✓ Azure AI Basic Fundamental</div>
+                        <div class="achievement-item">✓ Learn SQL with AI at DQLab</div>
+                        <div class="achievement-item">✓ AI Strategies for R&D Webinar</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title-center">Skills & Expertise</h2>
+                <div class="title-decoration-center">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Hard Skills</h3>
+                        <div class="skill-tags">
+                            <span>SQL</span>
+                            <span>Data Analysis</span>
+                            <span>Software Testing</span>
+                            <span>HTML/CSS/JavaScript</span>
+                            <span>Laravel</span>
+                            <span>UI/UX (Figma)</span>
+                            <span>Git/GitHub</span>
+                            <span>IoT Basics</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-tags">
+                            <span>Analytical Thinking</span>
+                            <span>Attention to Detail</span>
+                            <span>Problem-Solving</span>
+                            <span>Communication</span>
+                            <span>Adaptability</span>
+                            <span>Teamwork</span>
+                            <span>Initiative</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-split reverse">
+                    <div class="section-image">
+                        <div class="image-container">
+                            <div class="image-placeholder">
+                                <span>SETUP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="title-decoration">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>Feel free to contact me if you have any questions or just want to say hi.</p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <h4>Email</h4>
+                                <a href="mailto:niamanalu65@gmail.com">niamanalu65@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <h4>Phone</h4>
+                                <a href="tel:+6289561139004">0895611399004</a>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <h4>Location</h4>
+                                <p>Tano Ponggol, Sumatera Utara</p>
+                            </div>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcRwQnZxlSvSBXNhWnqSCQspFtZckZMfPWgxPSJXlCnPgWPlbbDbXrKfrzfKQTjngSNSFrqjx" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </a>
+                            <a href="https://github.com/niamnl13" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/antonia-tiopani-manalu-1297ab299" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Antonia Tiopani Manalu. All rights reserved.</p>
-            <p>Built with HTML, CSS & JavaScript</p>
+            <p>Built with passion and dedication</p>
         </div>
     </footer>
 
