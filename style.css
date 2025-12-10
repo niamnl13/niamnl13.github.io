@@ -421,6 +421,13 @@ body {
     font-size: 0.95rem;
 }
 
+.timeline {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .timeline-2col {
     width: 100%;
     position: relative;
