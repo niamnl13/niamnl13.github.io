@@ -263,7 +263,8 @@ body {
 .image-placeholder {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    width: 180px;
+    width: 60px;
+    aspect-ratio: 3/4;
     display: flex;
     align-items: center;
     justify-content: center;
