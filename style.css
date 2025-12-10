@@ -201,7 +201,7 @@ body {
 .role-text::after {
     content: '|';
     position: absolute;
-    right: -1px;
+    right: -5px;
     animation: blink 1s infinite;
 }
 
