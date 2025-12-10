@@ -216,6 +216,49 @@ function typeWriter(element, text, speed = 50) {
     type();
 }
 
+// ====================================
+// ROLE TEXT ANIMATION (Job Titles)
+// ====================================
+const roles = [
+    'Quality Assurance',
+    'Software Tester',
+    'Data Analyst',
+    'Frontend Developer',
+    'UI/UX Designer'
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let roleElement = document.getElementById('roleText');
+
+function animateRole() {
+    if (!roleElement) return;
+    
+    const currentRole = roles[roleIndex];
+    
+    if (isDeleting) {
+        roleElement.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        roleElement.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+    }
+    
+    let typeSpeed = isDeleting ? 50 : 100;
+    
+    if (!isDeleting && charIndex === currentRole.length) {
+        typeSpeed = 2000; // Pause at end
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        typeSpeed = 500; // Pause before next word
+    }
+    
+    setTimeout(animateRole, typeSpeed);
+}
+
 // Apply to subtitle on page load
 window.addEventListener('load', () => {
     const subtitle = document.querySelector('.subtitle');
