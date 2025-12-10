@@ -270,12 +270,6 @@ body {
     color: var(--secondary);
     font-size: 1.2rem;
     transition: all 0.3s;
-    filter: grayscale(1);
-}
-
-.image-placeholder:hover {
-    filter: grayscale(0);
-    border-color: var(--accent);
 }
 
 /* Section Split Layout */
