@@ -195,7 +195,7 @@ body {
 .role-text {
     color: var(--accent);
     position: relative;
-    min-width: inline-block;
+    min-width: auto;
 }
 
 .role-text::after {
