@@ -177,6 +177,39 @@ body {
     animation: fadeInUp 0.8s ease forwards 0.4s;
 }
 
+.role-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.5s;
+}
+
+.role-label {
+    color: var(--secondary);
+}
+
+.role-text {
+    color: var(--accent);
+    position: relative;
+    min-width: 300px;
+}
+
+.role-text::after {
+    content: '|';
+    position: absolute;
+    right: -8px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
 .highlight {
     color: var(--accent);
 }
