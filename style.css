@@ -195,13 +195,13 @@ body {
 .role-text {
     color: var(--accent);
     position: relative;
-    min-width: auto;
+    min-width: inline-block;
 }
 
 .role-text::after {
     content: '|';
     position: absolute;
-    right: 0;
+    right: -1px;
     animation: blink 1s infinite;
 }
 
