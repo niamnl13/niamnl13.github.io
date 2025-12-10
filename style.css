@@ -270,6 +270,12 @@ body {
     color: var(--secondary);
     font-size: 1.2rem;
     transition: all 0.3s;
+    filter: grayscale(1);
+}
+
+.image-placeholder:hover {
+    filter: grayscale(0);
+    border-color: var(--accent);
 }
 
 /* Section Split Layout */
@@ -667,8 +673,8 @@ body {
 }
 
 .social-icons svg {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
 }
 
 /* Footer */
