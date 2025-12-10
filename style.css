@@ -421,11 +421,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* Experience Section */
-.experience-section {
-    background: var(--bg-darker);
-}
-
 .timeline {
     margin-top: 40px;
 }
