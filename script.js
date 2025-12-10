@@ -268,6 +268,11 @@ window.addEventListener('load', () => {
             typeWriter(subtitle, text, 80);
         }, 500);
     }
+    
+    // Start role animation
+    setTimeout(() => {
+        animateRole();
+    }, 1500);
 });
 
 // ====================================
