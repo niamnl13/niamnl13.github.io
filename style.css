@@ -427,7 +427,7 @@ body {
     margin: 0 auto;
     position: relative;
 }
-
+/*
 .timeline-item {
     width: 50%;
     padding: 20px 30px;
@@ -463,7 +463,8 @@ body {
 .timeline-item.right::before {
     left: -8px;
 }
-
+*/
+/*
 .timeline-content {
     background: #1a1a1a;
     border: 1px solid #333;
@@ -503,7 +504,7 @@ body {
 .timeline-content li {
     margin-bottom: 6px;
 }
-
+*/
 /* Projects Section */
 .projects-section {
     background: var(--bg-dark);
@@ -991,128 +992,106 @@ body {
     color: var(--bg-darker);
 }
 
-/* ==================== ALTERNATING TIMELINE (LEFT-RIGHT) ==================== */
-.timeline-container {
+/* ==================== NEW CENTERED TIMELINE (Experience) ==================== */
+.timeline {
     position: relative;
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 20px 0;
+    max-width: 720px;
+    margin: 55px auto 0;
 }
 
 .timeline-line {
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: 48px;
+    right: 37px;
     width: 4px;
-    height: 100%;
-    background: var(--accent); /* gold/orange */
-    transform: translateX(-50%);
-    border-radius: 2px;
+    height: calc(100% - 90px);
+    background: var(--accent);
+    border-radius: 4px;
     z-index: 1;
 }
 
-.timeline-item {
+.timeline-entry {
     position: relative;
-    width: 50%;
-    padding: 30px 40px;
-    margin-bottom: 40px;
+    margin-bottom: 68px;
+    padding-right: 92px;
 }
 
-.timeline-item.left {
-    left: 0;
-    text-align: right;
-    padding-right: 80px;
-}
-
-.timeline-item.right {
-    left: 50%;
-    text-align: left;
-    padding-left: 80px;
-}
-
-.timeline-content {
-    background: var(--bg-card); /* #212121 */
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 28px 32px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    transition: all 0.35s ease;
-    position: relative;
-    z-index: 2;
-}
-
-.timeline-content:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(212, 165, 116, 0.18);
+.timeline-entry:last-of-type {
+    margin-bottom: 0;
 }
 
 .timeline-date {
-    position: absolute;
-    top: 32px;
     color: var(--accent);
     font-weight: 700;
-    font-size: 1.05rem;
-    white-space: nowrap;
+    font-size: 1.12rem;
+    margin-bottom: 14px;
+    display: inline-block;
 }
 
-.timeline-item.left .timeline-date {
-    right: -140px;
+.timeline-card {
+    background: #1f1f1f;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 30px 34px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    transition: all 0.3s ease;
 }
 
-.timeline-item.right .timeline-date {
-    left: -140px;
+.timeline-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(212, 165, 116, 0.2);
 }
 
-.timeline-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+.timeline-card h3 {
+    font-size: 1.55rem;
+    margin-bottom: 6px;
     color: var(--primary);
 }
 
-.timeline-content h4 {
-    font-size: 1.1rem;
-    color: #bbbbbb;
-    margin-bottom: 18px;
+.timeline-card h4 {
+    font-size: 1.08rem;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-.timeline-content ul {
-    list-style: none;
+.timeline-card ul {
     padding-left: 0;
+    list-style: none;
 }
 
-.timeline-content li {
-    margin-bottom: 10px;
-    padding-left: 22px;
+.timeline-card li {
+    margin-bottom: 11px;
+    padding-left: 24px;
     position: relative;
     color: var(--secondary);
+    line-height: 1.65;
 }
 
-.timeline-content li::before {
+.timeline-card li::before {
     content: "•";
     position: absolute;
     left: 0;
     color: var(--accent);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1;
 }
 
 .timeline-dot {
     position: absolute;
-    top: 38px;
-    width: 20px;
-    height: 20px;
+    top: 20px;
+    right: 29px;
+    width: 18px;
+    height: 18px;
     background: var(--accent);
     border: 4px solid var(--bg-darker);
     border-radius: 50%;
-    z-index: 3;
+    z-index: 2;
 }
 
-.timeline-item.left .timeline-dot {
-    right: -10px;
-}
-
-.timeline-item.right .timeline-dot {
-    left: -10px;
+/* Optional: buat section-split jadi full width biar lebih centered */
+.experience-section .section-split {
+    grid-template-columns: 1fr;
 }
 
 /* Responsive: stack vertically on mobile */
