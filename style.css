@@ -825,6 +825,108 @@ body {
     }
 }
 
+/* ==================== Experience ==================== */
+.timeline {
+    position: relative;
+    max-width: 720px;
+    margin: 55px auto 0;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 48px;
+    right: 37px;
+    width: 4px;
+    height: calc(100% - 90px);
+    background: var(--accent);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 68px;
+    padding-right: 92px;
+}
+
+.timeline-entry:last-of-type {
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.12rem;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.timeline-card {
+    background: #1f1f1f;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 30px 34px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(212, 165, 116, 0.2);
+}
+
+.timeline-card h3 {
+    font-size: 1.55rem;
+    margin-bottom: 6px;
+    color: var(--primary);
+}
+
+.timeline-card h4 {
+    font-size: 1.08rem;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.timeline-card ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.timeline-card li {
+    margin-bottom: 11px;
+    padding-left: 24px;
+    position: relative;
+    color: var(--secondary);
+    line-height: 1.65;
+}
+
+.timeline-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 20px;
+    right: 29px;
+    width: 18px;
+    height: 18px;
+    background: var(--accent);
+    border: 4px solid var(--bg-darker);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Optional: buat section-split jadi full width biar lebih centered */
+.experience-section .section-split {
+    grid-template-columns: 1fr;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
