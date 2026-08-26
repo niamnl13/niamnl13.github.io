@@ -219,12 +219,12 @@ function typeWriter(element, text, speed = 50) {
 // ====================================
 // ROLE TEXT ANIMATION (Job Titles)
 // ====================================
+Ganti:
 const roles = [
+    'Mobile App Developer',
     'Quality Assurance',
-    'Software Tester',
-    'Data Analyst',
-    'Frontend Developer',
-    'UI/UX Designer'
+    'UI/UX Designer',
+    'Data Analyst'
 ];
 
 let roleIndex = 0;
