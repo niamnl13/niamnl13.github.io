@@ -400,3 +400,26 @@ if ('scrollRestoration' in history) {
 window.addEventListener('beforeunload', () => {
     window.scrollTo(0, 0);
 });
+
+// ====================================
+// CERTIFICATE LIGHTBOX
+// ====================================
+function openCertModal(src, caption) {
+    const modal = document.getElementById('certModal');
+    const modalImg = document.getElementById('certModalImg');
+    const modalCaption = document.getElementById('certModalCaption');
+
+    modalImg.src = src;
+    modalCaption.textContent = caption;
+    modal.classList.add('active');
+}
+
+function closeCertModal() {
+    document.getElementById('certModal').classList.remove('active');
+}
+
+document.getElementById('certModal')?.addEventListener('click', closeCertModal);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCertModal();
+});
