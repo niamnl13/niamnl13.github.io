@@ -219,7 +219,6 @@ function typeWriter(element, text, speed = 50) {
 // ====================================
 // ROLE TEXT ANIMATION (Job Titles)
 // ====================================
-Ganti:
 const roles = [
     'Mobile App Developer',
     'Quality Assurance',
